@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home | Kape Agapaw</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/agapaw_logo/bean_logo.png">
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="webpage/css/var-web.css">
+    <link rel="stylesheet" href="webpage/css/nav.css">
+    <link rel="stylesheet" href="webpage/css/home.css">
+    <link rel="stylesheet" href="webpage/css/footer.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
-    
+
+    <!-- Intro Animation Screen -->
+    <div class="intro-screen">
+        <!-- Optional animation or preloader -->
+    </div>
+
+    <!-- NAVBAR: Fixed at top -->
+    <nav class="navbar" id="main-nav">
+        <div class="nav-content">
+
+            <!-- Left Links -->
+            <div class="nav-left">
+                <a href="#menu">MENU</a>
+                <a href="#about">ABOUT US</a>
+            </div>
+
+            <!-- Center Logo -->
+            <div class="nav-center">
+                <img src="assets/agapaw_logo/full_logo.png" alt="Agapaw Logo">
+            </div>
+
+            <!-- Right Links -->
+            <div class="nav-right">
+                <a href="#find">FIND US</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- HOME / Hero Section -->
+      <section id="home" class="panel home">
+    <div class="container hero-container">
+
+        <h1 class="hero-title">LOVE IN EVERY BREW</h1>
+
+        <div class="drink-image">
+            DRINK IMAGE
+        </div>
+
+    </div>
+</section>
+
+      
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Left: Logo + tagline -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="assets/agapaw_logo/white_logo.png" alt="Agapaw Logo" />
+                </div>
+                <p class="footer-tagline">Love is Every Brew</p>
+            </div>
+
+            <!-- Center: Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#find">FIND US</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            <!-- Right: Contact / Social -->
+            <div class="footer-contact">
+                <h4>Connect</h4>
+                <ul class="social-links">
+                    <li><a href="#"><i data-lucide="facebook"></i></a></li>
+                    <li><a href="#"><i data-lucide="twitter"></i></a></li>
+                    <li><a href="#"><i data-lucide="instagram"></i></a></li>
+                    <li><a href="#"><i data-lucide="mail"></i></a></li>
+                </ul>
+                <p class="email">support@agapaw.com</p>
+            </div>
+
+        </div>
+
+        <!-- Bottom Line -->
+        <div class="footer-bottom">
+            <p>© 2025 Kape Agapaw. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="webpage/js/web.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+
 </body>
 </html>

@@ -1,0 +1,38 @@
+.panel.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center */
+}
+
+
+.hero-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 4rem 2rem;
+  text-align: center;
+
+}
+
+
+.hero-title {
+  font-family: 'Buffy', 'Montserrat', sans-serif;
+  font-size: 150px;
+  letter-spacing: 3px;
+  margin-bottom: 3rem;
+   /* border: 1px solid #000; */
+   margin-top: 100px;  
+}
+
+
+.drink-image {
+  width: 260px;
+  height: 360px;
+  margin: 0 auto;
+  /* border: 1px solid #000; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+}

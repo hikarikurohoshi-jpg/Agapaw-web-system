@@ -1,0 +1,89 @@
+.navbar {
+    width: 100%;
+    background: var(--white);
+    /* border: 1px solid #000; */
+     position: fixed;   /* change from absolute to fixed */
+     top: 0;
+  left: 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  
+}
+
+.nav-content {
+    max-width: 1200px;
+     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding: 1.5rem 2rem;
+    /* border: 1px solid #000; */
+}
+
+/* Left & Right groups */
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 30px;
+    /* border: 1px solid #000; */
+     letter-spacing: 1px;
+     font-weight: 500;
+}
+
+/* Center logo */
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 1px solid #000; */
+}
+
+.nav-center img{
+    height: 60px;
+    width: auto;
+}
+/* Links */
+.navbar a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 14px;
+}
+
+
+/* links hover animation */
+/* Navbar links */
+.navbar a {
+    position: relative;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 14px;
+    padding-bottom: 6px; /* space for the line */
+}
+
+/* Bottom line (hidden by default) */
+.navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #B14C21;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+/* Hover effect */
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* left to right shits */
+/* .navbar a::after {
+    left: 0;
+    transform: none;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+} */
+
