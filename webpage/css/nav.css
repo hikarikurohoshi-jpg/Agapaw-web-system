@@ -23,7 +23,7 @@
 .nav-left,
 .nav-right {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     /* border: 1px solid #000; */
      letter-spacing: 1px;
      font-weight: 500;

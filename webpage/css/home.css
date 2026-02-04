@@ -16,12 +16,12 @@
 
 
 .hero-title {
-  font-family: 'Buffy', 'Montserrat', sans-serif;
-  font-size: 150px;
+   font-family: 'Buffy', 'Montserrat', sans-serif;
+  font-size: clamp(2.5rem, 8vw, 10rem);
   letter-spacing: 3px;
-  margin-bottom: 3rem;
+  margin: 3rem 0 2rem 0; /* replaces fixed 100px */
    /* border: 1px solid #000; */
-   margin-top: 100px;  
+
 }
 
 
