@@ -1,3 +1,5 @@
+
+
 .panel.home {
   min-height: 100vh;
   display: flex;
@@ -16,23 +18,78 @@
 
 
 .hero-title {
-   font-family: 'Buffy', 'Montserrat', sans-serif;
-  font-size: clamp(2.5rem, 8vw, 10rem);
+  font-family: 'Buffy', sans-serif;
+  font-size: 70px;
   letter-spacing: 3px;
-  margin: 3rem 0 2rem 0; /* replaces fixed 100px */
+  margin-bottom: 3rem;
    /* border: 1px solid #000; */
+   margin-top: 100px;  
+   text-align: center; 
+    /* line-height: 1; */
+     padding-left: 3px;
+}
 
+.hero-title h1{
+  margin: 0;
 }
 
 
-.drink-image {
-  width: 260px;
-  height: 360px;
-  margin: 0 auto;
+.hero-subtext {
+  margin-top: 1.2rem;        /* space from title */
+  max-width: 300px;          /* keeps it readable */
+  margin-left: auto;
+  margin-right: auto;
+/* border: 1px solid #000; */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  color: var(--black);  
+  transform: translateX(-5px);    
+  /* transform: translateY(-30px);         */
+}
+
+
+/* image container */
+
+.hero-images {
+  position: relative;      
+  width: 100%;
+  height: 300px;          
+  margin-bottom: 3rem;
+}
+
+/* LEFT BOX */
+.left-box {
+  position: absolute;
+  width: 40%;              
+  height: 500px;
+
+  left: 35px;                   
+  top: -520px;                   
+
   /* border: 1px solid #000; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  letter-spacing: 1px;
+  overflow: hidden;
 }
+
+/* RIGHT BOX */
+.right-box {
+  position: absolute;
+  width: 40%;
+  height: 500px;
+
+  right: 40px;              
+  top: -520px; 
+
+  /* border: 1px solid #000; */
+  overflow: hidden;
+}
+
+/* IMAGE RULE (shared) */
+.left-box img,
+.right-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

@@ -6,6 +6,7 @@
      top: 0;
   left: 0;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      z-index: 1000; 
   
 }
 
@@ -67,7 +68,7 @@
     left: 50%;
     width: 0;
     height: 2px;
-    background-color: #B14C21;
+    background-color: var(--primary);
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
