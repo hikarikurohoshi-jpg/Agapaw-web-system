@@ -62,10 +62,10 @@
         <div class="container hero-container">
 
           <div class="hero-title">
-            <h1>LOVE IN EVERY</h1>
-            <h1>BREW</h1>
+            <h1 class="hero-line" >LOVE IN EVERY</h1>
+            <h1 class="hero-line">BREW</h1>
 
-            <div class="hero-subtext">
+            <div class="hero-subtext hero-desc">
     Great coffee, comforting meals, and refreshing drinks all in one spot
     where comfort and flavor come together.
   </div>
@@ -73,13 +73,14 @@
 
           <div class="hero-images">
             <div class="left-box">
-              <img src="/assets/prod_images/left.png" alt="Left Coffee Image" />
+              <img src="assets/prod_images/left.png" alt="Left Coffee Image"  class="drink drink-left"/>
             </div>
 
             <div class="right-box">
               <img
-                src="/assets/prod_images/right.png"
+                src="assets/prod_images/right.png"
                 alt="Right Coffee Image"
+                 class="drink drink-right"
               />
             </div>
           </div>
@@ -138,6 +139,10 @@
         <p>© 2025 Kape Agapaw. All rights reserved.</p>
       </div>
     </footer>
+
+<!-- GSAP -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <!-- JS -->
     <script src="webpage/js/web.js"></script>
