@@ -1,20 +1,19 @@
 /* =============== FONTS =============== */
-/* Localhost path */
-@font-face {
+
+/* @font-face {
   font-family: 'Buffy';
   src: url('/assets/fonts/Buffy.woff') format('woff'),
        url('/assets/fonts/Buffy.otf') format('opentype');
   font-display: swap;
+} */
+
+@font-face {
+  font-family: 'Buffy';
+  src: url('../../assets/fonts/Buffy.woff') format('woff'),
+       url('../../assets/fonts/Buffy.otf') format('opentype');
+  font-display: swap;
 }
 
-
-/* live server path */
-/* @font-face {
-  font-family: 'Buffy';
-  src: url('../../../assets/fonts/Buffy.woff') format('woff'),
-       url('../../../assets/fonts/Buffy.otf') format('opentype');
-  font-display: swap;
-} */
 
 
 
