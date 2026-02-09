@@ -49,3 +49,26 @@ introTL
     duration: 1.6,
     ease: "back.out(1.4)"
   }, "-=1.1");
+
+
+// Lock base transform first
+gsap.set(".drink", { y: 0, rotation: 0 });
+
+// Gentle floating — centered on original position
+gsap.to(".drink-left", {
+  y: -10,
+  rotation: -1,
+  duration: 2,
+  ease: "sine.inOut",
+  repeat: -1,
+  yoyo: true
+});
+
+gsap.to(".drink-right", {
+  y: -12,
+  rotation: 1,
+  duration: 2,
+  ease: "sine.inOut",
+  repeat: -1,
+  yoyo: true
+});

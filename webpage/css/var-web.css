@@ -1,17 +1,22 @@
 /* =============== FONTS =============== */
-/* @font-face {
-  font-family: 'Buffy';
-  src: url('/Agapaw-web-system/assets/fonts/Buffy.woff') format('woff2'),
-       url('/Agapaw-web-system/assets/fonts/Buffy.otf') format('opentype');
-  font-display: swap;
-} */
-
+/* Localhost path */
 @font-face {
+  font-family: 'Buffy';
+  src: url('/assets/fonts/Buffy.woff') format('woff'),
+       url('/assets/fonts/Buffy.otf') format('opentype');
+  font-display: swap;
+}
+
+
+/* live server path */
+/* @font-face {
   font-family: 'Buffy';
   src: url('../../../assets/fonts/Buffy.woff') format('woff'),
        url('../../../assets/fonts/Buffy.otf') format('opentype');
   font-display: swap;
-}
+} */
+
+
 
 
 body, html {
@@ -24,6 +29,7 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+   overflow-y: scroll; 
 }
 
 /* =============== VARIABLES =============== */

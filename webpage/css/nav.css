@@ -78,13 +78,7 @@
     width: 100%;
 }
 
-/* left to right shits */
-/* .navbar a::after {
-    left: 0;
-    transform: none;
+/* Active link style */
+.navbar a.active::after {
+    width: 100%;        /* underline fully visible */
 }
-
-.navbar a:hover::after {
-    width: 100%;
-} */
-

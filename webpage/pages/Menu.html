@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kape Agapaw</title>
+    <title>Menu | Kape Agapaw</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/agapaw_logo/bean_logo.png" />
+    <link rel="icon" type="image/png" href="/assets/agapaw_logo/bean_logo.png" />
 
     <!-- Google Fonts: Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,36 +17,33 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="webpage/css/var-web.css" />
-    <link rel="stylesheet" href="webpage/css/nav.css" />
-    <link rel="stylesheet" href="webpage/css/home.css" />
-    <link rel="stylesheet" href="webpage/css/footer.css" />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/webpage/css/var-web.css" />
+    <link rel="stylesheet" href="/webpage/css/nav.css" />
+    <link rel="stylesheet" href="/webpage/css/menu.css" />
+    <link rel="stylesheet" href="/webpage/css/footer.css" />
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
 
   <body>
-    <!-- Intro Animation Screen -->
-    <div class="intro-screen">
-      <!-- Optional animation or preloader -->
-    </div>
-
+   
     <!-- NAVBAR: Fixed at top -->
     <nav class="navbar" id="main-nav">
       <div class="nav-content">
         <!-- Left Links -->
         <div class="nav-left">
-          <a href="/webpage/pages/Menu.html">MENU</a>
+          <a href="/webpage/pages/Menu.html" class="active">MENU</a>
           <a href="/webpage/pages/About.html">ABOUT US</a>
         </div>
 
         <!-- Center Logo -->
         <div class="nav-center">
-<a href="/index.html" class="active">
-                <img src="assets/agapaw_logo/full_logo.png" alt="Agapaw Logo" />
+            <a href="/index.html">
+                <img src="/assets/agapaw_logo/full_logo.png" alt="Agapaw Logo" />
             </a>
+          
         </div>
 
         <!-- Right Links -->
@@ -60,32 +57,10 @@
     <!-- MAIN CONTENT -->
     <main class="main-content">
       <!-- HOME / Hero Section -->
-      <section id="home" class="panel home">
+      <section id="menu" class="panel home">
         <div class="container hero-container">
 
-          <div class="hero-title">
-            <h1 class="hero-line" >LOVE IN EVERY</h1>
-            <h1 class="hero-line">BREW</h1>
-
-            <div class="hero-subtext hero-desc">
-    Great coffee, comforting meals, and refreshing drinks all in one spot
-    where comfort and flavor come together.
-  </div>
-          </div>
-
-          <div class="hero-images">
-            <div class="left-box">
-              <img src="assets/prod_images/left.png" alt="Left Coffee Image"  class="drink drink-left"/>
-            </div>
-
-            <div class="right-box">
-              <img
-                src="assets/prod_images/right.png"
-                alt="Right Coffee Image"
-                 class="drink drink-right"
-              />
-            </div>
-          </div>
+         
 
         </div>
       </section>
@@ -98,7 +73,7 @@
         <!-- Left: Logo + tagline -->
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="assets/agapaw_logo/white_logo.png" alt="Agapaw Logo" />
+            <img src="/assets/agapaw_logo/white_logo.png" alt="Agapaw Logo" />
           </div>
           <p class="footer-tagline">Love is Every Brew</p>
         </div>
@@ -147,7 +122,7 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <!-- JS -->
-     <script src="webpage/js/nav.js"></script>
+   
     <script src="webpage/js/web.js"></script>
     <script>
       // Initialize Lucide icons
