@@ -1,3 +1,28 @@
+// Prevent browser scroll restoration
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
+// Force scroll to top on refresh / reload
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    // Hard reset scroll
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+
+    // If ScrollTrigger exists, reset its memory
+    if (window.ScrollTrigger) {
+      ScrollTrigger.clearScrollMemory();
+      ScrollTrigger.refresh(true);
+    }
+
+    console.log("⬆️ Scroll forced to top after load");
+  }, 50); // ⬅️ this delay is the key
+});
+
+
+
  lucide.createIcons();
  gsap.registerPlugin(ScrollTrigger);
 
@@ -48,7 +73,33 @@ introTL
     opacity: 0,
     duration: 1.6,
     ease: "back.out(1.4)"
-  }, "-=1.1");
+  }, "-=1.1")
+
+    // Arrows (LAST to appear)
+  .from(".top-div", {
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.15
+  }, "+=0.3")
+
+  // Arrow labels (text)
+  .from(".text-div", {
+    y: 10,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power2.out",
+    stagger: 0.15
+  }, "-=0.6");
+
+
+  
+
+
+
+
+
 
 
 // Lock base transform first

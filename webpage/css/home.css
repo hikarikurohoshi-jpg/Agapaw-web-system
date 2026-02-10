@@ -13,7 +13,7 @@
   width: 100%;
   padding: 4rem 2rem;
   text-align: center;
-
+height: 900px;
 }
 
 
@@ -61,7 +61,6 @@
   margin-bottom: 3rem;
 
 
-
   filter: drop-shadow(0 26px 36px rgba(16, 13, 8, 0.45));
   will-change: transform;
   transform-origin: center bottom;
@@ -102,3 +101,114 @@
   object-fit: cover;
 }
 
+/* two arrow ===========================================*/
+.top-div,
+.text-div {
+  will-change: transform, opacity;
+}
+
+
+/* Top 200x200 divs */
+.top-div {
+  width: 210px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   /* border: 1px solid #000; */
+     background-size: cover;
+}
+
+.top-left {
+   position: absolute;
+  top: -280px;     /* move down from top */
+  left: -20px;  
+}
+
+.top-right {
+  position: absolute;
+  top: -400px;     /* move down from top */
+  right: -20px; 
+}
+
+/* Arrow images inside top divs */
+.arrow-img {
+  width: 150%;  
+  height: 150%;  
+  object-fit: contain; 
+ 
+}
+
+/* ======================== */
+/* Text divs next to top divs */
+.text-div {
+  position: absolute;
+  top: 50px; 
+  width: 150px; 
+  font-size: 14px;
+ font-family: 'Buffy', sans-serif;
+  color: var(--black);
+  text-align: center;
+  z-index: 11;
+   /* border: 1px solid #000; */
+     letter-spacing: 2px;
+}
+
+.text-left {
+  position: absolute;
+  top: -15px;     /* move down/up from top in px */
+  left: 110px;   /* move right/left from left in px */
+  width: 150px;/* 200px div + 20px gap */
+}
+
+.text-right {
+  position: absolute;
+  top: -300px;     /* move down/up from top in px */
+  right: -32px;  /* move left/right from right in px */
+  width: 150px;
+}
+/* ================================================ */
+
+/* intro divider */
+.intro-torn-divider {
+  width: 100%;
+  height: 160px; /* adjust if needed */
+
+  background-image: url("../../assets/divider-bg/torn-devide.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center  ;
+
+  background-color: var(--white); /* #B14C21 */
+}
+
+
+.next-section-first{
+  height: 100px;
+}
+
+/* best seller first page design*/
+.best-seller-page-first{
+background-color: var(--primary);
+}
+
+.next-section-first{
+  height: 500px;
+ 
+}
+
+
+
+
+/* best seller second page design */
+
+.best-seller-page-second{
+background-color: var(--white);
+}
+
+.next-section-second{
+  height: 900px;
+}

@@ -1,154 +1,184 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kape Agapaw</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/agapaw_logo/bean_logo.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kape Agapaw</title>
 
-    <!-- Google Fonts: Montserrat -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/agapaw_logo/bean_logo.png" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="webpage/css/var-web.css" />
-    <link rel="stylesheet" href="webpage/css/nav.css" />
-    <link rel="stylesheet" href="webpage/css/home.css" />
-    <link rel="stylesheet" href="webpage/css/footer.css" />
+  <!-- Google Fonts: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-  </head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="webpage/css/var-web.css" />
+  <link rel="stylesheet" href="webpage/css/nav.css" />
+  <link rel="stylesheet" href="webpage/css/home.css" />
+  <link rel="stylesheet" href="webpage/css/footer.css" />
 
-  <body>
-    <!-- Intro Animation Screen -->
-    <div class="intro-screen">
-      <!-- Optional animation or preloader -->
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <!-- Intro Animation Screen -->
+  <div class="intro-screen">
+    <!-- Optional animation or preloader -->
+  </div>
+
+  <!-- NAVBAR: Fixed at top -->
+  <nav class="navbar" id="main-nav">
+    <div class="nav-content">
+      <!-- Left Links -->
+      <div class="nav-left">
+        <a href="webpage/pages/Menu.html">MENU</a>
+        <a href="webpage/pages/About.html">ABOUT US</a>
+      </div>
+
+      <!-- Center Logo -->
+      <div class="nav-center">
+        <a href="index.html" class="active">
+          <img src="assets/agapaw_logo/full_logo.png" alt="Agapaw Logo" />
+        </a>
+      </div>
+
+      <!-- Right Links -->
+      <div class="nav-right">
+        <a href="webpage/pages/Find.html">FIND US</a>
+        <a href="webpage/pages/Contact.html">CONTACT US</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <!-- HOME / Hero Section -->
+    <section id="home" class="panel home">
+      <div class="container hero-container">
+
+        <div class="hero-title">
+          <h1 class="hero-line">LOVE IN EVERY</h1>
+          <h1 class="hero-line">BREW</h1>
+
+          <div class="hero-subtext hero-desc">
+            Great coffee, comforting meals, and refreshing drinks all in one spot
+            where comfort and flavor come together.
+          </div>
+        </div>
+
+       <div class="hero-images" style="position: relative;">
+
+  <!-- Top divs with arrows -->
+  <div class="top-div top-left">
+    <img src="assets/icon/left-arrow.png" alt="Arrow Left" class="arrow-img" />
+  </div>
+  <div class="top-div top-right">
+    <img src="assets/icon/right-arrow.png" alt="Arrow Right" class="arrow-img" />
+  </div>
+
+  <!-- Text divs next to top divs -->
+  <div class="text-div text-left">ICED LATTE</div>
+  <div class="text-div text-right">GREEN APPLE FRUITY SODA</div>
+
+  <div class="left-box">
+    <img src="assets/prod_images/left.png" alt="Left Coffee Image" class="drink drink-left" />
+  </div>
+
+  <div class="right-box">
+    <img src="assets/prod_images/right.png" alt="Right Coffee Image" class="drink drink-right" />
+  </div>
+</div>
+
+
+      </div>
+    </section>
+
+    <!-- intro paint devider -->
+    <div class="intro-torn-divider"></div>
+
+    <!-- NEXT SECTION(BEST SELLER PAGE/first) -->
+    <section class="panel best-seller-page-first">
+      <div class="container next-section-first ">
+
+      </div>
+    </section>
+
+    <!-- outro paint divider -->
+    <div class="torn-divider"></div>
+
+
+    <!-- NEXT SECTION(BEST SELLER PAGE/second) -->
+    <section class="panel best-seller-page-second">
+      <div class="container  next-section-second">
+      
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Left: Logo + tagline -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/agapaw_logo/white_logo.png" alt="Agapaw Logo" />
+        </div>
+        <p class="footer-tagline">Love is Every Brew</p>
+      </div>
+
+      <!-- Center: Quick Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="webpage/pages/About.html">ABOUT US</a></li>
+          <li><a href="webpage/pages/Menu.htm">MENU</a></li>
+          <li><a href="webpage/pages/Find.html">FIND US</a></li>
+          <li><a href="webpage/pages/Contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+
+      <!-- Right: Contact / Social -->
+      <div class="footer-contact">
+        <h4>Connect</h4>
+        <ul class="social-links">
+          <li>
+            <a href="#"><i data-lucide="facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i data-lucide="twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i data-lucide="instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i data-lucide="mail"></i></a>
+          </li>
+        </ul>
+        <p class="email">support@agapaw.com</p>
+      </div>
     </div>
 
-    <!-- NAVBAR: Fixed at top -->
-    <nav class="navbar" id="main-nav">
-      <div class="nav-content">
-        <!-- Left Links -->
-        <div class="nav-left">
-          <a href="webpage/pages/Menu.html">MENU</a>
-          <a href="webpage/pages/About.html">ABOUT US</a>
-        </div>
+    <!-- Bottom Line -->
+    <div class="footer-bottom">
+      <p>© 2025 Kape Agapaw. All rights reserved.</p>
+    </div>
+  </footer>
 
-        <!-- Center Logo -->
-        <div class="nav-center">
-         <a href="index.html" class="active">
-                <img src="assets/agapaw_logo/full_logo.png" alt="Agapaw Logo" />
-            </a>
-        </div>
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
-        <!-- Right Links -->
-        <div class="nav-right">
-          <a href="webpage/pages/Find.html">FIND US</a>
-          <a href="webpage/pages/Contact.html">CONTACT US</a>
-        </div>
-      </div>
-    </nav>
+  <!-- JS -->
+  <script src="webpage/js/nav.js"></script>
+  <script src="webpage/js/web.js"></script>
 
-    <!-- MAIN CONTENT -->
-    <main class="main-content">
-      <!-- HOME / Hero Section -->
-      <section id="home" class="panel home">
-        <div class="container hero-container">
+</body>
 
-          <div class="hero-title">
-            <h1 class="hero-line" >LOVE IN EVERY</h1>
-            <h1 class="hero-line">BREW</h1>
-
-            <div class="hero-subtext hero-desc">
-    Great coffee, comforting meals, and refreshing drinks all in one spot
-    where comfort and flavor come together.
-  </div>
-          </div>
-
-          <div class="hero-images">
-            <div class="left-box">
-              <img src="assets/prod_images/left.png" alt="Left Coffee Image"  class="drink drink-left"/>
-            </div>
-
-            <div class="right-box">
-              <img
-                src="assets/prod_images/right.png"
-                alt="Right Coffee Image"
-                 class="drink drink-right"
-              />
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-container">
-        <!-- Left: Logo + tagline -->
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <img src="assets/agapaw_logo/white_logo.png" alt="Agapaw Logo" />
-          </div>
-          <p class="footer-tagline">Love is Every Brew</p>
-        </div>
-
-        <!-- Center: Quick Links -->
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="webpage/pages/About.html">ABOUT US</a></li>
-            <li><a href="webpage/pages/Menu.htm">MENU</a></li>
-            <li><a href="webpage/pages/Find.html">FIND US</a></li>
-            <li><a href="webpage/pages/Contact.html">CONTACT US</a></li>
-          </ul>
-        </div>
-
-        <!-- Right: Contact / Social -->
-        <div class="footer-contact">
-          <h4>Connect</h4>
-          <ul class="social-links">
-            <li>
-              <a href="#"><i data-lucide="facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i data-lucide="twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i data-lucide="instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i data-lucide="mail"></i></a>
-            </li>
-          </ul>
-          <p class="email">support@agapaw.com</p>
-        </div>
-      </div>
-
-      <!-- Bottom Line -->
-      <div class="footer-bottom">
-        <p>© 2025 Kape Agapaw. All rights reserved.</p>
-      </div>
-    </footer>
-
-<!-- GSAP -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-
-    <!-- JS -->
-     <script src="webpage/js/nav.js"></script>
-    <script src="webpage/js/web.js"></script>
-
-  </body>
 </html>
