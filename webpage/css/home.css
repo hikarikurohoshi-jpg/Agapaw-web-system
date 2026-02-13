@@ -21,19 +21,17 @@ height: 900px;
 .hero-title {
   font-family: 'Buffy', sans-serif;
   font-size: 70px;
-  letter-spacing: 3px;
+  letter-spacing: 6px;
   margin-bottom: 3rem;
    /* border: 1px solid #000; */
    margin-top: 100px;  
    text-align: center; 
     /* line-height: 1; */
      padding-left: 3px;
-     
 }
 
 .hero-title h1{
   margin: 0;
-  
 }
 
 
@@ -54,7 +52,6 @@ height: 900px;
 
 
 /* image container */
-
 .hero-images {
   position: relative;      
   width: 100%;
@@ -174,43 +171,58 @@ height: 900px;
 }
 /* ================================================ */
 
-/* intro divider */
-.intro-torn-divider {
-  width: 100%;
-  height: 160px; /* adjust if needed */
 
-  background-image: url("../../assets/divider-bg/torn-devide.png");
+
+
+/* ================= BEST SELLER SECTION ================= */
+
+.panel.best-seller {
+  min-height: 200vh;   /* 2 pages height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ /* border: 1px solid #000; */
+  /* You will add background image later */
+   background-image: url("../../assets/divider-bg/whole-bg.png");
+background-size: contain;
+ background-position: center top;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center  ;
-
-  background-color: var(--white); /* #B14C21 */
+  
 }
 
-
-.next-section-first{
-  height: 100px;
-}
-
-/* best seller first page design*/
-.best-seller-page-first{
-background-color: var(--primary);
-}
-
-.next-section-first{
-  height: 500px;
+.panel.best-seller {
+  position: relative;
+  top: -130px;    /* move up */
  
 }
-
-
-
-
-/* best seller second page design */
-
-.best-seller-page-second{
-background-color: var(--white);
+.best-seller-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-top: -250px;
+  text-align: center;
+  height: 100vh;
+  color: var(--white);
 }
 
-.next-section-second{
-  height: 900px;
+.best-seller-title h2 {
+  font-family: 'Buffy', sans-serif;
+  font-size: 60px;
+  letter-spacing: 6px;
+  margin-bottom: 1.5rem;
 }
+
+
+
+.best-seller-sub {
+  max-width: 420px;
+  margin: 0 auto;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+
+
+
+
+

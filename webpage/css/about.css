@@ -1,0 +1,386 @@
+/* BLOCK REVEAL SETUP */
+.about-title {
+  position: relative;
+  overflow: hidden;
+   line-height: 1;
+  font-family: 'Buffy', serif;
+  font-size: 100px;
+  letter-spacing: 6px;
+  color: var(--white);
+
+       /* ✅ text hidden at load */
+  --reveal-x: -100%;
+
+  will-change: transform;
+}
+
+
+.block-reveal {
+  position: relative;
+  display: inline-block; /* 🔥 makes width = text width */
+  overflow: hidden;
+}
+
+
+/* TEXT */
+.block-content {
+  display: inline-block;
+  opacity: 0; /* hidden initially */
+  position: relative;
+  z-index: 2;
+}
+
+/* BLOCK */
+.block-revealer {
+  position: absolute;
+  inset: 0;
+  background: var(--white);
+  z-index: 3;
+
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+
+
+/* Reveal block */
+.about-title::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--black); /* #100D08 */
+  transform: translateX(var(--reveal-x));
+  z-index: 3;
+}
+
+.about-hero {
+  position: relative;
+  height: 100vh;
+
+  background-image: url("../../assets/divider-bg/about-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center; /* vertical center */
+}
+
+/* BLACK OVERLAY */
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 13, 8, 0.7); /* #100D08 overlay */
+  z-index: 1;
+}
+
+/* CONTENT ABOVE OVERLAY */
+.about-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+/* TITLE */
+
+/* ITALIC PART */
+.about-title .italic {
+  font-style: italic;
+}
+
+/* SUBTEXT */
+.about-subtext {
+  margin-top: 1rem;
+  color: var(--white);
+  opacity: 0.9;
+}
+
+
+/* ================= ABOUT DESCRIPTION SECTION ================= */
+
+.about-description {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+}
+
+/* Center Container */
+.about-desc-container {
+  position: relative;
+  text-align: center;
+  padding:  60px;
+}
+
+/* TOP-LEFT CORNER */
+.about-desc-container::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  width: 150px;
+  height: 150px;
+
+  /* 🔥 Cross diagonal pattern */
+  background:
+    repeating-linear-gradient(
+      45deg,
+      rgba(255,255,255,0.35) 0px,
+      rgba(255,255,255,0.35) 1px,
+      transparent 1px,
+      transparent 8px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(255,255,255,0.2) 0px,
+      rgba(255,255,255,0.2) 1px,
+      transparent 1px,
+      transparent 12px
+    );
+
+  border-top: 3px solid var(--white);
+  border-left: 3px solid var(--white);
+
+  pointer-events: none;
+}
+
+
+
+/* BOTTOM-RIGHT CORNER */
+.about-desc-container::after {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  width: 150px;
+  height: 150px;
+
+  background:
+    repeating-linear-gradient(
+      45deg,
+      rgba(255,255,255,0.25) 0px,
+      rgba(255,255,255,0.25) 1px,
+      transparent 1px,
+      transparent 10px
+    );
+
+  border-bottom: 3px solid var(--white);
+  border-right: 3px solid var(--white);
+
+  pointer-events: none;
+}
+
+/* Paragraph Text */
+.about-desc-text {
+  font-size: 60px;
+  line-height: 1.5;
+  color: var(--white);
+   font-family: 'Buffy', serif;
+     letter-spacing: 3px;
+}
+
+/* Italic Words */
+.italic-text {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/* Heavier Font Weight */
+.bold-text {
+  font-weight: 800;
+}
+
+
+/* third page shits */
+.about-team{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+
+/* on scroll shits */
+/* PANEL STACKING SYSTEM */
+
+
+/* Prevent scroll glitch */
+
+
+
+/* third section */
+
+/* ================= ABOUT TEAM CONTENT ================= */
+
+/* ================= ABOUT TEAM SECTION ================= */
+
+.about-team-container {
+
+  align-items: center;
+
+  gap: 60px;
+  height: 100%;
+  position: relative;
+  width: 1200px;
+  /* border: 1px solid black; */
+}
+
+.team-left {
+  flex: 1;
+  position: relative;
+  top: -50px;
+  width: 600px;
+  text-align: left;
+  /* border: 1px solid black; */
+  padding: 60px 40px;
+  z-index: 1;
+  margin-left: 20px;
+  color: var(--white);
+}
+
+.team-left::before {
+  content: "";
+  position: absolute;
+
+  width: 800px;
+  aspect-ratio: 1;
+
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+
+  /* 🎨 Layered Background */
+  background:
+    /* Thin contour lines */
+    repeating-linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.15) 0px,
+      rgba(255, 255, 255, 0.15) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+
+    /* Paper fiber texture */
+    url('https://www.transparenttextures.com/patterns/paper-fibers.png'),
+
+    /* Base color */
+    var(--primary);
+
+  background-blend-mode: overlay, multiply, normal;
+  background-size: auto, auto, cover;
+
+  clip-path: shape(
+    from 6.44% 52.75%,
+    curve to 12.90% 38.89% with 6.85% 44.55%,
+    curve to 21.52% 26.42% with 18.96% 33.23%,
+    curve to 32.25% 21.10% with 24.09% 19.61%,
+    curve to 45.68% 22.18% with 40.42% 22.59%,
+    curve to 58.30% 17.50% with 50.94% 21.77%,
+    curve to 73.24% 15.81% with 65.67% 13.24%,
+    curve to 81.99% 26.61% with 80.80% 18.39%,
+    curve to 80.24% 41.61% with 83.18% 34.83%,
+    curve to 84.10% 55.75% with 77.30% 48.38%,
+    curve to 89.06% 71.61% with 90.90% 63.12%,
+    curve to 81.00% 86.63% with 87.22% 80.10%,
+    curve to 64.40% 84.75% with 74.78% 93.17%,
+    curve to 47.22% 84.80% with 54.02% 76.34%,
+    curve to 35.30% 86.51% with 40.41% 93.27%,
+    curve to 24.08% 76.15% with 30.18% 79.75%,
+    curve to 12.01% 66.75% with 17.98% 72.55%,
+    curve to 6.44% 52.75% with 6.03% 60.94%
+  );
+
+  box-shadow:
+    inset 0 0 30px rgba(0,0,0,0.15),
+    0 10px 40px rgba(0,0,0,0.2);
+
+  z-index: -1;
+}
+
+
+
+.first-title-team{
+font-family: 'Buffy', serif;
+  font-size: 70px;
+ letter-spacing: 4px;
+ text-align: center;
+}
+
+.team-title {
+  font-family: 'Buffy', serif;
+  font-size: 70px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+
+  text-align: center;
+   /* border: 1px solid black; */
+}
+
+.team-subtext {
+  font-size: 20px;
+  max-width: 600px;
+  line-height: 1.6;
+
+  text-align: center;
+   /* border: 1px solid black; */
+}
+
+/* RIGHT SIDE */
+.team-right {
+  flex: 1;
+ /* IMPORTANT for absolute positioning */
+  height: 800px;
+   /* border: 1px solid black; */
+   width: 500px;
+
+     position: absolute;
+  right: 0px;
+  top:10px;  
+}
+
+/* IMAGE BOXES */
+.team-img {
+  position: absolute; /* so you can move with px */
+  width: 400px;
+  height: 250px;
+  border-radius: 25px;
+  background-color: var(--primary);
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+/* FIRST IMAGE */
+.img-one {
+ top: 430px;      /* move down */
+  left: 80px; 
+  transform: rotate(-8deg);
+
+  background-image: url("../../assets/divider-bg/pic-team-second.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* SECOND IMAGE */
+.img-two {
+top: 100px;      /* move down */
+  left: 80px; 
+  transform: rotate(8deg);
+
+  background-image: url("../../assets/divider-bg/team-pic.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Optional hover effect */
+.team-img:hover {
+  transform: rotate(0deg) scale(1.05);
+  z-index: 5;
+}
+
+.team-left {
+  margin-top: 150px;   /* moves down */
+}
