@@ -1,0 +1,92 @@
+
+.find-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: center; 
+}
+
+/* BLOCK REVEAL SETUP */
+.find-title {
+  position: relative;
+  overflow: hidden;
+   line-height: 1;
+  font-family: 'Buffy', serif;
+ font-size: clamp(2.5rem, 8vw, 6rem);
+
+  text-align: center;
+  letter-spacing: 6px;
+  color: var(--white);
+
+       /* ✅ text hidden at load */
+  --reveal-x: -100%;
+
+  will-change: transform;
+}
+
+
+.block-reveal {
+  position: relative;
+  display: inline-block; /* 🔥 makes width = text width */
+  overflow: hidden;
+}
+
+
+/* TEXT */
+.block-content {
+  display: inline-block;
+  opacity: 0; /* hidden initially */
+  position: relative;
+  z-index: 2;
+
+   padding: 10px; /* 🔥 added padding */
+  box-sizing: border-box;
+}
+
+/* BLOCK */
+.block-revealer {
+  position: absolute;
+  inset: 0;
+  background: var(--white);
+  z-index: 3;
+
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+
+
+/* Reveal block */
+.find-title::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--black); /* #100D08 */
+  transform: translateX(var(--reveal-x));
+  z-index: 3;
+}
+
+
+/* bg and overlay */
+.find-hero {
+  position: relative;
+   min-height: 100vh;
+  padding: 6rem 0;
+
+  background-image: url("../../assets/divider-bg/find-cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center; /* vertical center */
+}
+
+/* BLACK OVERLAY */
+.find-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 13, 8, 0.7); /* #100D08 overlay */
+  z-index: 1;
+}
