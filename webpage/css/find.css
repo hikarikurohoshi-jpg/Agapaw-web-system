@@ -90,3 +90,64 @@
   background: rgba(16, 13, 8, 0.7); /* #100D08 overlay */
   z-index: 1;
 }
+
+
+
+
+/* ================= FIND CONTENT SECTION ================= */
+
+.find-content {
+  min-height: 100vh;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.find-content-container {
+  text-align: center;
+  color: var(--black);
+
+}
+
+/* Title */
+.location-title {
+  font-family: 'Buffy', serif;
+  font-size: 60px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+/* Address */
+.location-address {
+  font-size: 20px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+/* Description */
+.location-desc {
+  font-size: 18px;
+  margin-bottom: 40px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Map Styling */
+.map-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 25px;
+  overflow: hidden; /* makes iframe rounded */
+    border: 3px solid rgba(255,255,255,0.5);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}

@@ -90,3 +90,164 @@
   background: rgba(16, 13, 8, 0.7); /* #100D08 overlay */
   z-index: 1;
 }
+
+
+/* =================================
+MAIN CONTACT CARD (ONE ROUNDED BOX)
+================================= */
+
+.contact-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background: var(--white);
+  border-radius: 24px;
+  overflow: hidden;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+/* =================================
+LEFT SIDE FORM
+================================= */
+
+.contact-left {
+  padding: 3rem;
+  background: var(--white);
+}
+
+.contact-form-title {
+  font-family: 'Buffy', serif;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  margin-bottom: .5rem;
+  
+}
+
+.contact-form-sub {
+  font-size: .95rem;
+  opacity: .75;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-group label {
+  font-size: .8rem;
+  margin-bottom: .4rem;
+  opacity: .7;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  background: transparent;
+  padding: .7rem 0;
+    font-family: 'Montserrat', sans-serif;
+  resize: none;
+}
+
+.form-group textarea {
+  min-height: 110px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* BUTTON */
+
+.contact-btn {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  background: var(--black);
+  color: var(--white);
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+/* =================================
+RIGHT SIDE IMAGE
+================================= */
+
+.contact-right {
+  position: relative;
+
+  background-image: url("../../assets/divider-bg/card-call.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.contact-right-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(16,13,8,.85),
+    rgba(16,13,8,.3)
+  );
+}
+
+.contact-right-content {
+  position: relative;
+  padding: 3rem;
+  color: var(--white);
+}
+
+.contact-right-content h3 {
+  font-family: 'Buffy', serif;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+    letter-spacing: 3px;
+}
+
+.contact-right-content p {
+  font-size: .95rem;
+  opacity: .85;
+}
+
+/* =================================
+RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-right {
+    min-height: 300px;
+  }
+
+}
