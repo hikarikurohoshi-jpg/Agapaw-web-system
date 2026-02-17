@@ -66,18 +66,59 @@
           </span>
 
         </h1>
-
-        <section class="panel menu-content">
-          <div class="container menu-content-container">
-
-          </div>
-
-        </section>
-
       </div>
     </section>
 
+    <section class="panel menu-content">
+      <div class="container menu-content-container">
 
+ <div class="menu-layout">
+
+          <!-- SIDEBAR -->
+          <nav class="menu-sidebar">
+            <h3>Menu</h3>
+
+            <button type="button" class="filter-btn active" data-filter="all">All Items</button>
+
+            <h4>Drinks</h4>
+            <button type="button" class="filter-btn" data-filter="Featured-Drinks">Featured Drinks</button>
+            <button type="button" class="filter-btn" data-filter="Cold-Coffee">Cold Coffee</button>
+            <button type="button" class="filter-btn" data-filter="Hot-Drinks">Hot Drinks</button>
+            <button type="button" class="filter-btn" data-filter="Fruity-Soda">Fruity Soda</button>
+            <button type="button" class="filter-btn" data-filter="Non-Coffee">Non Coffee</button>
+
+            <h4>Foods</h4>
+            <button type="button" class="filter-btn" data-filter="Featured-Foods">Featured Foods</button>
+            <button type="button" class="filter-btn" data-filter="Rice-Meals">Rice Meals</button>
+            <button type="button" class="filter-btn" data-filter="Chicken-Wings">Chicken Wings</button>
+            <button type="button" class="filter-btn" data-filter="Shareable">Shareable</button>
+            <button type="button" class="filter-btn" data-filter="Burgers">Burgers</button>
+            <button type="button" class="filter-btn" data-filter="Snacks">Snacks</button>
+          </nav>
+
+          <!-- CONTENT -->
+          <div class="menu-dynamic">
+
+            <div class="breadcrumb hidden" id="breadcrumb">
+              <a href="#" id="breadcrumb-home">Menu</a> /
+              <span id="breadcrumb-category"></span>
+            </div>
+
+            <h3 class="category-heading drinks" data-section="drinks">Drinks</h3>
+            <div class="grid-container drinks" data-section="drinks" id="drinksOverview"></div>
+
+            <h3 class="category-heading foods" data-section="foods">Foods</h3>
+            <div class="grid-container foods" data-section="foods" id="foodsOverview"></div>
+
+            <div id="menuDetails"></div>
+
+          </div>
+
+        </div>
+        
+      </div>
+
+    </section>
 
 
   </main>
