@@ -32,10 +32,15 @@
     <!-- Optional animation or preloader -->
   </div>
 
-  <!-- NAVBAR: Fixed at top -->
+  <!-- navbar -->
   <nav class="navbar" id="main-nav">
+
+    <!-- Animated Background -->
+    <div class="pt-navbar-fill"></div>
+
     <div class="nav-content">
-      <!-- Left Links -->
+
+      <!-- Left Links (Desktop Only) -->
       <div class="nav-left">
         <a href="webpage/pages/Menu.html">MENU</a>
         <a href="webpage/pages/About.html">ABOUT US</a>
@@ -48,13 +53,37 @@
         </a>
       </div>
 
-      <!-- Right Links -->
+      <!-- Right Links (Desktop Only) -->
       <div class="nav-right">
         <a href="webpage/pages/Find.html">FIND US</a>
         <a href="webpage/pages/Contact.html">CONTACT US</a>
       </div>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger">
+        <span class="bar"></span>
+      </button>
+
     </div>
+
+    <!-- 🔥 THIS IS REQUIRED FOR ANIMATION -->
+    <div class="nav-links" id="nav-links">
+
+      <!-- White Logo (Mobile Overlay Only) -->
+     <div class="mobile-logo">
+        
+
+          <img src="assets/agapaw_logo/white_logo.png" alt="Agapaw Logo" />
+       
+      </div>
+      <a href="webpage/pages/Menu.html">MENU</a>
+      <a href="webpage/pages/About.html">ABOUT US</a>
+      <a href="webpage/pages/Find.html">FIND US</a>
+      <a href="webpage/pages/Contact.html">CONTACT US</a>
+    </div>
+
   </nav>
+
 
   <!-- MAIN CONTENT -->
   <main class="main-content">
@@ -72,49 +101,128 @@
           </div>
         </div>
 
-       <div class="hero-images" style="position: relative;">
+        <div class="hero-images" style="position: relative;">
 
-  <!-- Top divs with arrows -->
-  <div class="top-div top-left">
-    <img src="assets/icon/left-arrow.png" alt="Arrow Left" class="arrow-img" />
-  </div>
-  <div class="top-div top-right">
-    <img src="assets/icon/right-arrow.png" alt="Arrow Right" class="arrow-img" />
-  </div>
+          <!-- Top divs with arrows -->
+          <div class="top-div top-left">
+            <img src="assets/icon/left-arrow.png" alt="Arrow Left" class="arrow-img" />
+          </div>
+          <div class="top-div top-right">
+            <img src="assets/icon/right-arrow.png" alt="Arrow Right" class="arrow-img" />
+          </div>
 
-  <!-- Text divs next to top divs -->
-  <div class="text-div text-left">ICED LATTE</div>
-  <div class="text-div text-right">GREEN APPLE FRUITY SODA</div>
+          <!-- Text divs next to top divs -->
+          <div class="text-div text-left">ICED LATTE</div>
+          <div class="text-div text-right">GREEN APPLE FRUITY SODA</div>
 
-  <div class="left-box">
-    <img src="assets/prod_images/left.png" alt="Left Coffee Image" class="drink drink-left" />
-  </div>
+          <div class="left-box">
+            <img src="assets/prod_images/left.png" alt="Left Coffee Image" class="drink drink-left" />
+          </div>
 
-  <div class="right-box">
-    <img src="assets/prod_images/right.png" alt="Right Coffee Image" class="drink drink-right" />
-  </div>
-</div>
+          <div class="right-box">
+            <img src="assets/prod_images/right.png" alt="Right Coffee Image" class="drink drink-right" />
+          </div>
+        </div>
 
 
       </div>
     </section>
 
-  <!-- BEST SELLER SECTION -->
-<section id="best-seller" class="panel best-seller">
-  <div class="container best-seller-container">
+    <!-- BEST SELLER SECTION -->
+    <section id="best-seller" class="panel best-seller">
+      <div class="container best-seller-container">
 
-    <div class="best-seller-title">
-      <h2>OUR BEST SELLER</h2>
-      <p class="best-seller-sub">
-        Our most loved drinks and customer favorites, crafted with passion
-        and served with love in every brew.
-      </p>
-    </div>
+        <div class="best-seller-title">
+          <h2>OUR BEST SELLER</h2>
+          <p class="best-seller-sub">
+            Our most loved drinks and customer favorites, crafted with passion
+            and served with love in every brew.
+          </p>
+        </div>
 
-    <!-- You can add cards / ranking / images here later -->
+        <!-- PRODUCTS GRID -->
+        <div class="best-seller-grid">
 
-  </div>
-</section>
+
+          <div class="product-item">
+            <div class="stack">
+              <div class="pin"></div> <!-- PIN ADDED HERE -->
+              <div class="card">
+                <div class="image">
+                  <img src="assets/prod_images/drinks/Ube.png" alt="Ube">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="stack">
+              <div class="pin"></div>
+              <div class="card">
+                <div class="image">
+                  <img src="assets/prod_images/temp.jpg" alt="hazlenut">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="stack">
+              <div class="pin"></div>
+              <div class="card">
+                <div class="image">
+                  <img src="assets/prod_images/test.png" alt="GREEN APPLE">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="stack">
+              <div class="pin"></div>
+              <div class="card">
+                <div class="image">
+                  <img src="assets/prod_images/burger-bs.png" alt="burger">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="stack">
+              <div class="pin"></div>
+              <div class="card">
+                <div class="image">
+                  <img src="assets/prod_images/test-2.png" alt="PorkSilog">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <!-- From Uiverse.io by janisar-hyder -->
+            <div class="stack">
+              <div class="pin"></div>
+              <div class="card">
+                <div class="image">
+                  <img src="assets/prod_images/test-3.jpg" alt="Chicken wings">
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
 
 
 

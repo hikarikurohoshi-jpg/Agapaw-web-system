@@ -73,3 +73,49 @@ words.forEach((word, i) => {
 
 });
 
+// test nav shits:
+document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.getElementById("main-nav");
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  if (!navbar || !hamburger || !navLinks) {
+    console.warn("Missing navbar/hamburger/navLinks — aborting menu init");
+    return;
+  }
+
+  hamburger.addEventListener("click", () => {
+    const isActive = navbar.classList.toggle("active");
+    navLinks.classList.toggle("show", isActive);
+    hamburger.classList.toggle("active", isActive);
+  });
+
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navbar.classList.remove("active");
+      navLinks.classList.remove("show");
+      hamburger.classList.remove("active");
+    });
+  });
+
+  window.addEventListener("scroll", () => {
+    navbar.classList.toggle("scrolled", window.scrollY > 30);
+  });
+
+let resizeTimeout;
+
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimeout);
+
+  resizeTimeout = setTimeout(() => {
+    const width = window.innerWidth;
+
+    if (width >= 769 && navbar.classList.contains("active")) {
+      navbar.classList.remove("active");
+      navLinks.classList.remove("show");
+      hamburger.classList.remove("active");
+    }
+
+  }, 150);
+});
+});

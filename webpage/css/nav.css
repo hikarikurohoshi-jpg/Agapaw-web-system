@@ -82,3 +82,170 @@
 .navbar a.active::after {
     width: 100%;        /* underline fully visible */
 }
+
+/* test shits */
+
+
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 28px;
+  height: 20px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--black);
+  z-index: 10000;
+}
+
+.hamburger::before,
+.hamburger::after,
+.hamburger .bar {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: currentColor;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.hamburger::before { top: 0; }
+.hamburger .bar { top: 9px; }
+.hamburger::after { top: 18px; }
+
+.hamburger.active::before {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active .bar {
+  opacity: 0;
+}
+
+.hamburger.active::after {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+/* Hide mobile menu on desktop */
+.nav-links {
+  display: none;
+}
+
+
+/* ===============================
+   NAVBAR FILL BACKGROUND
+=================================*/
+
+.pt-navbar-fill {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: var(--primary);
+  z-index: 900;
+  transition: height 0.4s ease;
+}
+
+/* When navbar is active */
+.navbar.active .pt-navbar-fill {
+  height: 100vh;
+}
+
+/* Make hamburger white when menu is active */
+.navbar.active .hamburger {
+  color: var(--white);
+}
+
+/* Hide mobile logo on desktop */
+.mobile-logo {
+  display: none;
+}
+
+/* ===============================
+   MOBILE NAV
+=================================*/
+@media (max-width: 768px) {
+
+.mobile-logo {
+  display: block;
+  position: absolute;   /* absolute inside nav-links */
+  top: -0.2rem;          /* same vertical alignment as hamburger */
+    left: 0.8rem;      
+ 
+       /* above background fill */
+}
+.mobile-logo img {
+  height: 120px;
+    width: auto;
+}
+
+ .nav-left,
+  .nav-right {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: block !important;
+  }
+
+  /* Hide left & right links */
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+
+  /* Move logo to left */
+  .nav-center {
+    position: static;       /* remove absolute */
+    transform: none;
+  }
+
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Mobile full screen menu */
+  .nav-links {
+     display: flex;  
+    position: fixed;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 6rem;
+    padding-left: 2rem;
+    gap: 2rem;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav-links a {
+    font-size: 1.6rem;
+    color: var(--white);
+  }
+
+}
+

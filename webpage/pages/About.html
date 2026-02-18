@@ -29,11 +29,12 @@
 <body>
 
   <!-- NAVBAR: Fixed at top -->
-  <nav class="navbar" >
+  <nav class="navbar" id="main-nav">
+    <div class="pt-navbar-fill"></div>
     <div class="nav-content">
       <!-- Left Links -->
       <div class="nav-left">
-        <a href="Menu.html">MENU</a>
+        <a href="Menu.html" >MENU</a>
         <a href="About.html" class="active">ABOUT US</a>
       </div>
 
@@ -42,7 +43,6 @@
         <a href="../../index.html">
           <img src="../../assets/agapaw_logo/full_logo.png" alt="Agapaw Logo" />
         </a>
-
       </div>
 
       <!-- Right Links -->
@@ -50,9 +50,32 @@
         <a href="Find.html">FIND US</a>
         <a href="Contact.html">CONTACT US</a>
       </div>
-    </div>
-  </nav>
 
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger">
+        <span class="bar"></span>
+      </button>
+
+    </div>
+
+    <div class="nav-links" id="nav-links">
+
+      <!-- White Logo (Mobile Overlay Only) -->
+      <div class="mobile-logo">
+
+
+        <img src="../../assets/agapaw_logo/white_logo.png" alt="Agapaw Logo" />
+
+      </div>
+
+      <a href="Menu.html">MENU</a>
+      <a href="About.html">ABOUT US</a>
+      <a href="Find.html">FIND US</a>
+      <a href="Contact.html">CONTACT US</a>
+    </div>
+
+
+  </nav>
   <!-- MAIN CONTENT -->
   <main class="main-content">
     <!-- HOME / Hero Section -->

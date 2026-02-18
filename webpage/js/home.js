@@ -97,3 +97,75 @@ gsap.to(".drink-right", {
   repeat: -1,
   yoyo: true
 });
+
+
+
+
+// ===============================
+// BEST SELLER TITLE / SUBTITLE
+// ===============================
+
+// H2 fade in/out
+gsap.fromTo(".best-seller-title h2",
+  { opacity: 0, y: 40 },
+  {
+    opacity: 1,
+    y: 0,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".best-seller-title",
+      start: "top 80%", // offset so it triggers earlier
+      end: "top center",
+      scrub: true
+    }
+  }
+);
+
+// Subtitle fade in/out
+gsap.fromTo(".best-seller-sub",
+  { opacity: 0, y: 20 },
+  {
+    opacity: 1,
+    y: 0,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".best-seller-title",
+      start: "top 70%", // slightly after H2
+      end: "top center",
+      scrub: true
+    }
+  }
+);
+
+
+// ===============================
+// BEST SELLER: PRODUCT ITEMS STAGGERED ENTRANCE
+// ===============================
+
+const products = gsap.utils.toArray(".best-seller-grid .product-item");
+
+products.forEach((product, index) => {
+  const isEven = index % 2 !== 0;
+
+  gsap.fromTo(product,
+    {
+      x: isEven ? 180 : -180,
+      rotation: isEven ? -20 : 20,
+      opacity: 0,
+      scale: 0.9
+    },
+    {
+      x: 0,
+      rotation: 0,
+      opacity: 1,
+      scale: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: product,
+        start: "top 90%", // when each product enters viewport
+        end: "top 40%",
+        scrub: true
+      }
+    }
+  );
+});
