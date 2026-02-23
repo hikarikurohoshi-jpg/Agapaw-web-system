@@ -375,3 +375,32 @@
   }
 
 }
+.modal-section {
+  margin-top: 18px;
+}
+
+.modal-section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.modal-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.modal-size-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal-size-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
